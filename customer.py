@@ -14,6 +14,10 @@ class Customer:
             return 1200
         else:
             return 1500
+    def info_csv(self):
+         return(f"{self.first_name} {self.family_name},{self.age},{self.entry_fee()}")
+
+
 
 
 
@@ -31,14 +35,13 @@ print(ken.age)
 print(tom.age)
 print(ieyasu.age)
 
-"""
-料金の計算ルール
-こども料金(20歳未満): 1000円
-おとな料金(20歳以上65歳未満): 1500円
-シニア料金(65歳以上): 1200円
-"""
-
+# C-3
 print(f"子供料金は（20歳未満）:{ken.entry_fee()}円")
 print(f"おとな料金（20歳以上65歳未満）：{tom.entry_fee()}円")
 print(f"シニア料金（65歳以上）：{ieyasu.entry_fee()}円")
+
+# C-4
+print(ken.info_csv())
+print(tom.info_csv())
+print(ieyasu.info_csv())
 
